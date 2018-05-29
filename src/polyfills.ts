@@ -45,6 +45,8 @@
 // Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
 import 'core-js/es7/reflect';
 
+// Web Custom Elements Support
+// import '@webcomponents/custom-elements/custom-elements.min';
 
 /**
  * Web Animations `@angular/platform-browser/animations`
@@ -72,8 +74,6 @@ import 'core-js/es7/reflect';
  * Zone JS is required by default for Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
-
-
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
