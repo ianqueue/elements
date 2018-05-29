@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <meta charset="utf-8">
   <title>Angular Elements Test Page</title>
   <base href="/">
@@ -17,9 +19,7 @@
     var button = document.querySelector('a-button');
     button.addEventListener('action', function(event) {
       console.log(`"action" emitted: ${event.detail}`);
-    });
-
-    setTimeout(function() { button.label = 'Counting' }, 3000);
+    })
   </script>
 </body>
 </html>

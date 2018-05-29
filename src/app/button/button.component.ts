@@ -2,15 +2,8 @@ import { Input, Component, ViewEncapsulation, EventEmitter, Output } from '@angu
 
 @Component({
   selector: 'a-button',
-  template: `<button (click)="handleClick()">{{label}}</button>`,
-  styles: [`
-    button {
-      border: solid 3px;
-      padding: 8px 10px;
-      background: #bada55;
-      font-size: 20px;
-    }
-  `],
+  template: `<button mat-fab (click)="handleClick()">{{label}}</button>`,
+  styles: [``],
   encapsulation: ViewEncapsulation.Native
 })
 export class ButtonComponent {
