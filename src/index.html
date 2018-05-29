@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Elements</title>
+  <title>Angular Elements Test Page</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <a-root></a-root>
+
+
+  <a-button label="First Value"></a-button>
+
+  <script>
+    const button = document.querySelector('a-button');
+    button.addEventListener('action', (event) => {
+      console.log(`"action" emitted: ${event.detail}`);
+    })
+    setTimeout(() => button.label = 'Second Value', 3000);
+  </script>
 </body>
 </html>
