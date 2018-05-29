@@ -11,7 +11,7 @@
 <body>
 
 
-  <a-button label="First Value"></a-button>
+  <a-button label="Count"></a-button>
 
   <script>
     var button = document.querySelector('a-button');
@@ -19,7 +19,7 @@
       console.log(`"action" emitted: ${event.detail}`);
     });
 
-    setTimeout(function() { button.label = 'Second Value' }, 3000);
+    setTimeout(function() { button.label = 'Counting' }, 3000);
   </script>
 </body>
 </html>
