@@ -4,7 +4,7 @@ import { Input, Component, ViewEncapsulation, EventEmitter, Output } from '@angu
   selector: 'a-button',
   template: `<button mat-fab (click)="handleClick()">{{label}}</button>`,
   styles: [``],
-  encapsulation: ViewEncapsulation.Native
+
 })
 export class ButtonComponent {
   @Input() label = 'default label';
