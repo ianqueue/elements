@@ -14,11 +14,12 @@
   <a-button label="First Value"></a-button>
 
   <script>
-    const button = document.querySelector('a-button');
-    button.addEventListener('action', (event) => {
+    var button = document.querySelector('a-button');
+    button.addEventListener('action', function(event) {
       console.log(`"action" emitted: ${event.detail}`);
-    })
-    setTimeout(() => button.label = 'Second Value', 3000);
+    });
+
+    setTimeout(function() { button.label = 'Second Value' }, 3000);
   </script>
 </body>
 </html>
